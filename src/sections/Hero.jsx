@@ -8,7 +8,7 @@ const Hero = () => {
       <NavBar />
 
       {hero.map(({ title, description, button }) => (
-        <div className="grid place-content-center h-[60vh] text-center gap-y-4 max-lg:h-[70vh] p-8">
+        <div className="grid place-content-center text-center gap-y-4 lg:h-[60vh] max-lg:h-[57vh] max-md:h-[55vh] p-8">
           <h1 className="font-satoshi text-[3.5rem] leading-tight font-normal max-lg:text-4xl">
             {title}
           </h1>
