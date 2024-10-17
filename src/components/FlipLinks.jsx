@@ -7,7 +7,7 @@ const FlipLinks = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-2xl font-cabinet font-light max-lg:text-xl max-2xl:text-2xl"
+      className="relative z-10 block overflow-hidden whitespace-nowrap text-2xl font-cabinet font-light max-lg:text-xl max-2xl:text-2xl 2xl:text-3xl"
     >
       <motion.div
         variants={{
@@ -18,6 +18,7 @@ const FlipLinks = ({ children, href }) => {
             y: "-100%",
           },
         }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
       >
         {children}
       </motion.div>
@@ -31,6 +32,7 @@ const FlipLinks = ({ children, href }) => {
             y: 0,
           },
         }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
       >
         {children}
       </motion.div>

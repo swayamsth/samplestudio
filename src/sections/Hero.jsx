@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import { hero } from "../constants";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
@@ -16,12 +17,7 @@ const Hero = () => {
             {description}
           </p>
           <div className="mx-auto">
-            <button className="border-[1px] rounded-full border-black px-5 py-2 flex items-center ">
-              <span className="font-satoshi text-lg font-light sm:text-xl lg:text-xl  2xl:text-2xl">
-                {button.title}
-              </span>
-              <img src={button.icon} alt="" />
-            </button>
+            <Button button={button} />
           </div>
         </div>
       ))}
