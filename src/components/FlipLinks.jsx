@@ -7,7 +7,7 @@ const FlipLinks = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-2xl font-cabinet font-light max-lg:text-xl"
+      className="relative block overflow-hidden whitespace-nowrap text-2xl font-cabinet font-light max-lg:text-xl max-2xl:text-2xl"
     >
       <motion.div
         variants={{
