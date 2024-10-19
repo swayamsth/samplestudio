@@ -26,33 +26,31 @@ export const aboutUs = [
 
 export const projects = [
   {
-    works: [
-      {
-        id: 1,
-        title: "project 1",
-        image: "/images/project1.webp",
-      },
-      {
-        id: 2,
-        title: "project 2",
-        image: "/images/project2.webp",
-      },
-      {
-        id: 3,
-        title: "project 3",
-        image: "/images/project3.webp",
-      },
-      {
-        id: 4,
-        title: "project 4",
-        image: "/images/project4.webp",
-      },
-      {
-        id: 5,
-        title: "project 5",
-        image: "/images/project5.webp",
-      },
-    ],
+    id: 1,
+    title: "project 1",
+    image: "/images/project1.webp",
+  },
+  {
+    id: 2,
+    title: "project 2",
+    image: "/images/project2.webp",
+  },
+  {
+    id: 3,
+    title: "project 3",
+    image: "/images/project3.webp",
+  },
+  {
+    id: 4,
+    title: "project 4",
+    image: "/images/project4.webp",
+  },
+  {
+    id: 5,
+    title: "project 5",
+    image: "/images/project5.webp",
+  },
+  {
     button: {
       title: "explore more",
       icon: "./icons/chevron-right.svg",
