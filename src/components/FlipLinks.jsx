@@ -24,7 +24,7 @@ const FlipLinks = ({ children, href }) => {
         {children}
       </motion.div>
       <motion.div
-        className="flex justtify-center items-center absolute inset-0"
+        className="flex justify-center items-center absolute inset-0"
         variants={{
           initial: {
             y: "100%",
