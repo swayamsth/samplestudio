@@ -6,10 +6,11 @@ const FlipLinks = ({ children, href }) => {
     <motion.a
       initial="initial"
       whileHover="hovered"
-      href={href}
+      href={href ? href : "#"}
       className="relative z-10 block overflow-hidden whitespace-nowrap text-2xl font-cabinet font-light max-lg:text-xl max-2xl:text-2xl 2xl:text-3xl"
     >
       <motion.div
+        className="flex justify-center items-center"
         variants={{
           initial: {
             y: 0,
@@ -18,12 +19,12 @@ const FlipLinks = ({ children, href }) => {
             y: "-100%",
           },
         }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
+        transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
       >
         {children}
       </motion.div>
       <motion.div
-        className="absolute inset-0"
+        className="flex justtify-center items-center absolute inset-0"
         variants={{
           initial: {
             y: "100%",
@@ -32,7 +33,7 @@ const FlipLinks = ({ children, href }) => {
             y: 0,
           },
         }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
+        transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
       >
         {children}
       </motion.div>
