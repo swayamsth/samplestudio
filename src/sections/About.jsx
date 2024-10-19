@@ -4,9 +4,9 @@ import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section>
+    <section className="mt-8">
       {aboutUs.map(({ title, description, button, image }) => (
-        <div className="p-6 sm:p-7 lg:p-8 flex justify-between items-center gap-8 max-sm:block">
+        <div className="p-6 sm:p-7 lg:p-8 flex justify-between items-center gap-32 max-lg:gap-16 max-sm:block">
           <div className="mt-16 sm:mt-24">
             <h1 className="font-cabinet text-3xl font-medium mb-3 sm:text-4xl sm:mb-5 lg:text-5xl 2xl:text-6xl">
               {title}
@@ -20,7 +20,11 @@ const About = () => {
           </div>
 
           <div>
-            <img src={image} alt="" className="w-full max-sm:mt-8 rounded-xl" />
+            <img
+              src={image}
+              alt=""
+              className="w-full h-full max-sm:mt-8 rounded-xl"
+            />
           </div>
         </div>
       ))}
