@@ -1,6 +1,7 @@
 import React from "react";
 import { projects } from "../constants";
 import Button from "../components/Button";
+import Grid from "../components/Grid";
 
 const FeaturedProjects = () => {
   const projectItems = projects.slice(0, 5);
@@ -15,15 +16,11 @@ const FeaturedProjects = () => {
         <div className="h-[2px] w-full bg-black rounded-full" />
       </div>
 
-      <div className="p-8 grid grid-cols-12 grid-rows-6">
-        {projectItems.map(({ id, title, image }) => (
-          <div key={id}>
-            <img src={image} alt={title} />
-          </div>
-        ))}
-      </div>
+      <Grid projectItems={projectItems} />
 
-      {exploreButton && <Button button={exploreButton} />}
+      <div className="mt-8 flex items-center justify-center">
+        {exploreButton && <Button button={exploreButton} />}
+      </div>
     </section>
   );
 };
