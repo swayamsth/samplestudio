@@ -1,4 +1,4 @@
-import { button } from "framer-motion/client";
+import { button, image } from "framer-motion/client";
 
 export const hero = [
   {
@@ -54,6 +54,30 @@ export const projects = [
     button: {
       title: "explore more",
       icon: "./icons/chevron-right.svg",
+    },
+  },
+];
+
+export const whyUsHeading = [
+  {
+    title: "What Sets Us Apart",
+    description:
+      "Our unique blend of creativity, collaboration, and commitment to excellence. At samplestudio, we tailor every design to reflect your vision, work closely with you at every step, and integrate sustainable practices to create innovative, lasting spaces that inspire.",
+    button: {
+      title: "learn how we work",
+    },
+  },
+];
+
+export const whyUs = [
+  {
+    id: "01",
+    title: "Innovative, Tailored Solutions",
+    description:
+      "At samplestudio, every project begins with your unique vision. We design personalized, cutting-edge spaces that reflect your needs, whether it's a modern home or a sustainable urban development, pushing the boundaries of creativity and innovation.",
+    image: {
+      src: "/images/whyUs1.webp",
+      title: "(01) beach house in miami",
     },
   },
 ];

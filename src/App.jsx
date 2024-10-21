@@ -3,6 +3,7 @@ import About from "./sections/About";
 import FeaturedProjects from "./sections/FeaturedProjects";
 import Hero from "./sections/Hero";
 import { useEffect } from "react";
+import WhyUs from "./sections/WhyUs";
 
 export default function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function App() {
       <Hero />
       <About />
       <FeaturedProjects />
+      <WhyUs />
     </div>
   );
 }
