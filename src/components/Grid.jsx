@@ -3,7 +3,7 @@ import React from "react";
 const Grid = ({ projectItems }) => {
   return (
     <section className="overflow-hidden px-8">
-      <div className="grid grid-cols-12 grid-rows-8 gap-6 md:gap-8 max-sm:flex max-sm:flex-col">
+      <div className="grid grid-cols-12 grid-rows-8 gap-6 md:gap-8 lg:gap-12 2xl:gap-16 max-sm:flex max-sm:flex-col">
         <div className="row-start-1 row-span-4 col-start-1 col-span-8">
           <img
             src={projectItems[0].image}

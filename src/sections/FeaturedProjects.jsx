@@ -18,7 +18,7 @@ const FeaturedProjects = () => {
 
       <Grid projectItems={projectItems} />
 
-      <div className="mt-8 flex items-center justify-center">
+      <div className="my-8 flex items-center justify-center">
         {exploreButton && <Button button={exploreButton} />}
       </div>
     </section>
