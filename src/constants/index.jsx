@@ -76,8 +76,38 @@ export const whyUs = [
     description:
       "At samplestudio, every project begins with your unique vision. We design personalized, cutting-edge spaces that reflect your needs, whether it's a modern home or a sustainable urban development, pushing the boundaries of creativity and innovation.",
     image: {
-      src: "/images/whyUs1.webp",
+      src: "/images/feature1.webp",
       title: "(01) beach house in miami",
+    },
+  },
+  {
+    id: "02",
+    title: "Building Together, Every Step of the Way",
+    description:
+      "We view our clients as partners, collaborating from concept to completion to ensure every detail aligns with your vision. We listen, adapt, and value your input, creating spaces that are personal and purpose-driven.",
+    image: {
+      src: "/images/feature2.webp",
+      title: "(02) city of paris in the 80s",
+    },
+  },
+  {
+    id: "03",
+    title: "Architecture with Integrity",
+    description:
+      "At samplestudio, sustainability is at our core. We use eco-friendly designs, innovative materials, and energy-efficient solutions to minimize environmental impact while maintaining aesthetics and functionality, building with the future in mind.",
+    image: {
+      src: "/images/feature3.webp",
+      title: "(03) skyline in brazil",
+    },
+  },
+  {
+    id: "04",
+    title: "Excellence Backed by Results",
+    description:
+      "With years of experience and successful projects across all sectors, our portfolio speaks for itself. We deliver high-quality designs on time and within budget, ensuring your project’s success from start to finish.",
+    image: {
+      src: "/images/feature4.webp",
+      title: "(04) arch tunnel in europe",
     },
   },
 ];
