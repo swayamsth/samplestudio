@@ -38,17 +38,18 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center relative border-2 border-red-600">
-          <div className="absolute left-0 top-0 transform -rotate-90 origin-top-left translate-y-10 border-2 border-green-600">
-            <h3 className="font-satoshi font-light text-xl tracking-widest">
-              {whyUs[0].image.title}
-            </h3>
-          </div>
+        <div className="relative">
           <img
             src={whyUs[0].image.src}
             alt={whyUs[0].image.title}
-            className="size-1/4 rounded-xl"
+            className="w-1/3 h-auto rounded-xl object-cover"
           />
+
+          <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
+            <p className="whitespace-nowrap text-xl tracking-widest font-satoshi">
+              {whyUs[0].image.title}
+            </p>
+          </div>
         </div>
       </div>
     </section>
