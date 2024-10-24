@@ -3,10 +3,10 @@ import { whyUs } from "../constants";
 
 const SetApart = () => {
   return (
-    <section className="p-8">
+    <section className="p-8 grid grid-rows-6 grid-cols-2 w-full h-[300vh]">
       {/* First Section */}
 
-      <div>
+      <div className="row-start-1 row-span-1 col-start-1 col-span-1">
         <h1 className="font-cabinet text-3xl mb-3 font-medium sm:text-4xl lg:text-5xl 2xl:text-6xl">
           {whyUs[0].id}
         </h1>
@@ -18,12 +18,8 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative">
-        <img
-          src={whyUs[0].image.src}
-          alt={whyUs[0].image.title}
-          className="w-full h-auto rounded-xl object-cover"
-        />
+      <div className="relative row-start-1 row-span-2 col-start-2 col-span-1 size-[90%] rounded-xl object-cover justify-self-end">
+        <img src={whyUs[0].image.src} alt={whyUs[0].image.title} className="" />
 
         <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
           <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
@@ -34,7 +30,7 @@ const SetApart = () => {
 
       {/* Second Section */}
 
-      <div>
+      <div className="row-start-3 row-span-1 col-start-2 col-span-1">
         <h1 className="font-cabinet text-3xl mb-3 font-medium sm:text-4xl lg:text-5xl 2xl:text-6xl">
           {whyUs[1].id}
         </h1>
@@ -46,7 +42,7 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative w-full h-auto">
+      <div className="relative w-3/4 h-auto row-start-2 row-span-2 col-start-1 col-span-1">
         <img
           src={whyUs[1].image.src}
           alt={whyUs[1].image.title}
@@ -62,7 +58,7 @@ const SetApart = () => {
 
       {/* Third Section */}
 
-      <div>
+      <div className="row-start-4 row-span-1 col-start-1 col-span-1">
         <h1 className="font-cabinet text-3xl mb-3 font-medium sm:text-4xl lg:text-5xl 2xl:text-6xl">
           {whyUs[2].id}
         </h1>
@@ -74,11 +70,11 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative">
+      <div className="relative row-start-4 row-span-2 col-start-2 col-span-1 w-10/12 h-auto justify-self-end">
         <img
           src={whyUs[2].image.src}
           alt={whyUs[2].image.title}
-          className="w-full h-auto rounded-xl object-cover"
+          className="rounded-xl object-cover"
         />
 
         <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
@@ -90,7 +86,7 @@ const SetApart = () => {
 
       {/* Fourth Section */}
 
-      <div>
+      <div className="row-start-6 row-span-1 col-start-2 col-span-1">
         <h1 className="font-cabinet text-3xl mb-3 font-medium sm:text-4xl lg:text-5xl 2xl:text-6xl">
           {whyUs[3].id}
         </h1>
@@ -102,7 +98,7 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative w-full h-auto">
+      <div className="relative w-10/12 h-auto row-start-5 row-span-2 col-start-1 col-span-1">
         <img
           src={whyUs[3].image.src}
           alt={whyUs[3].image.title}

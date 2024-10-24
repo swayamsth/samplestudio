@@ -8,7 +8,7 @@ const WhyUs = () => {
       {whyUsHeading.map(({ title, description, button }, index) => (
         <div
           key={index}
-          className="p-8 flex justify-between max-sm:flex-col max-sm: gap-3"
+          className="p-8 flex justify-between max-sm:flex-col max-sm:gap-3"
         >
           <h1 className="font-cabinet text-3xl font-medium sm:text-4xl lg:text-5xl 2xl:text-6xl w-[8ch]">
             {title}
