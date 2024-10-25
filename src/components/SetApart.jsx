@@ -3,7 +3,7 @@ import { whyUs } from "../constants";
 
 const SetApart = () => {
   return (
-    <section className="p-8 grid grid-rows-6 grid-cols-2 gap-8 w-full h-[300vh] max-sm:flex max-sm:flex-col max-sm:h-full md:gap-24 lg:h-[250vh]">
+    <section className="p-8 grid grid-rows-6 grid-cols-2 gap-8 w-full h-full max-sm:flex max-sm:flex-col md:gap-24 lg:gap-52">
       {/* First Section */}
 
       <div className="row-start-1 row-span-1 col-start-1 col-span-1">
@@ -18,15 +18,15 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative row-start-1 row-span-2 col-start-2 col-span-1 justify-self-end">
+      <div className="relative row-start-1 row-span-2 col-start-2 col-span-1 justify-self-end w-full h-auto">
         <img
           src={whyUs[0].image.src}
           alt={whyUs[0].image.title}
           className="size-full rounded-xl object-cover"
         />
 
-        <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
-          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
+        <div className="absolute left-0 top-1/2 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
+          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl 2xl:text-2xl">
             {whyUs[0].image.title}
           </p>
         </div>
@@ -46,15 +46,15 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative row-start-2 row-span-2 col-start-1 col-span-1">
+      <div className="relative row-start-2 row-span-2 col-start-1 col-span-1 w-full h-auto">
         <img
           src={whyUs[1].image.src}
           alt={whyUs[1].image.title}
-          className="w-full h-full rounded-xl object-cover"
+          className="w-full h-full rounded-xl object-cover object-center"
         />
 
-        <div className="absolute bottom-24 -right-[70%] origin-bottom-left -translate-y-1/2 -rotate-90 transform md:-right-[93%] lg:-right-[73%]">
-          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
+        <div className="absolute top-full left-full pl-4 origin-top-left -rotate-90 transform -translate-y-1/2">
+          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl 2xl:text-2xl">
             {whyUs[1].image.title}
           </p>
         </div>
@@ -74,15 +74,15 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative row-start-4 row-span-2 col-start-2 col-span-1 justify-self-end">
+      <div className="relative row-start-4 row-span-2 col-start-2 col-span-1 w-full h-auto">
         <img
           src={whyUs[2].image.src}
           alt={whyUs[2].image.title}
-          className="size-full rounded-xl object-cover"
+          className="w-full h-full rounded-xl object-cover"
         />
 
-        <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
-          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
+        <div className="absolute left-0 top-1/2 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
+          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl 2xl:text-2xl">
             {whyUs[2].image.title}
           </p>
         </div>
@@ -102,15 +102,15 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative row-start-5 row-span-2 col-start-1 col-span-1">
+      <div className="relative row-start-5 row-span-2 col-start-1 col-span-1 w-full h-auto">
         <img
           src={whyUs[3].image.src}
           alt={whyUs[3].image.title}
           className="w-full h-full rounded-xl object-cover"
         />
 
-        <div className="absolute bottom-24 -right-2/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform md:-right-[90%] lg:-right-[70%]">
-          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
+        <div className="absolute top-full left-full pl-4 origin-top-left -rotate-90 transform -translate-y-1/2">
+          <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl 2xl:text-2xl">
             {whyUs[3].image.title}
           </p>
         </div>
