@@ -14,7 +14,7 @@ const WhyUs = () => {
             {title}
           </h1>
 
-          <div className="flex flex-col gap-5 justify-start items-start max-w-prose">
+          <div className="flex flex-col gap-5 justify-start items-start md:max-w-[35ch]  lg:max-w-prose">
             <p className="font-satoshi font-light text-base sm:text-lg lg:text-xl 2xl:text-2xl">
               {description}
             </p>

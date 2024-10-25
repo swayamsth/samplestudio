@@ -3,7 +3,7 @@ import { whyUs } from "../constants";
 
 const SetApart = () => {
   return (
-    <section className="p-8 grid grid-rows-6 grid-cols-2 w-full h-[300vh]">
+    <section className="p-8 grid grid-rows-6 grid-cols-2 gap-8 w-full h-[300vh] max-sm:flex max-sm:flex-col max-sm:h-full md:gap-24 lg:h-[250vh]">
       {/* First Section */}
 
       <div className="row-start-1 row-span-1 col-start-1 col-span-1">
@@ -18,8 +18,12 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative row-start-1 row-span-2 col-start-2 col-span-1 size-[90%] rounded-xl object-cover justify-self-end">
-        <img src={whyUs[0].image.src} alt={whyUs[0].image.title} className="" />
+      <div className="relative row-start-1 row-span-2 col-start-2 col-span-1 justify-self-end">
+        <img
+          src={whyUs[0].image.src}
+          alt={whyUs[0].image.title}
+          className="size-full rounded-xl object-cover"
+        />
 
         <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
           <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
@@ -42,14 +46,14 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative w-3/4 h-auto row-start-2 row-span-2 col-start-1 col-span-1">
+      <div className="relative row-start-2 row-span-2 col-start-1 col-span-1">
         <img
           src={whyUs[1].image.src}
           alt={whyUs[1].image.title}
-          className="rounded-xl object-cover"
+          className="w-full h-full rounded-xl object-cover"
         />
 
-        <div className="absolute bottom-24 -right-[15.75rem] origin-bottom-left -translate-y-1/2 -rotate-90 transform">
+        <div className="absolute bottom-24 -right-[70%] origin-bottom-left -translate-y-1/2 -rotate-90 transform md:-right-[93%] lg:-right-[73%]">
           <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
             {whyUs[1].image.title}
           </p>
@@ -70,11 +74,11 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative row-start-4 row-span-2 col-start-2 col-span-1 w-10/12 h-auto justify-self-end">
+      <div className="relative row-start-4 row-span-2 col-start-2 col-span-1 justify-self-end">
         <img
           src={whyUs[2].image.src}
           alt={whyUs[2].image.title}
-          className="rounded-xl object-cover"
+          className="size-full rounded-xl object-cover"
         />
 
         <div className="absolute left-0 top-1/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform">
@@ -98,14 +102,14 @@ const SetApart = () => {
         </p>
       </div>
 
-      <div className="relative w-10/12 h-auto row-start-5 row-span-2 col-start-1 col-span-1">
+      <div className="relative row-start-5 row-span-2 col-start-1 col-span-1">
         <img
           src={whyUs[3].image.src}
           alt={whyUs[3].image.title}
-          className="rounded-xl object-cover"
+          className="w-full h-full rounded-xl object-cover"
         />
 
-        <div className="absolute bottom-24 -right-[19rem] origin-bottom-left -translate-y-1/2 -rotate-90 transform">
+        <div className="absolute bottom-24 -right-2/3 origin-bottom-left -translate-y-1/2 -rotate-90 transform md:-right-[90%] lg:-right-[70%]">
           <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl">
             {whyUs[3].image.title}
           </p>
