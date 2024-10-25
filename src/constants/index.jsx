@@ -110,4 +110,10 @@ export const whyUs = [
       title: "(04) arch tunnel in europe",
     },
   },
+  {
+    button: {
+      title: "start your project today",
+      icon: "./icons/chevron-right.svg",
+    },
+  },
 ];
