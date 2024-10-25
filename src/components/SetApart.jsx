@@ -1,9 +1,12 @@
 import React from "react";
 import { whyUs } from "../constants";
+import Button from "./Button";
 
 const SetApart = () => {
+  const contactBtn = whyUs[4]?.button;
+
   return (
-    <section className="p-8 grid grid-rows-6 grid-cols-2 gap-8 w-full h-full max-sm:flex max-sm:flex-col md:gap-24 lg:gap-52">
+    <section className="p-8 grid grid-rows-6 grid-cols-2 gap-8 w-full h-full max-sm:flex max-sm:flex-col sm:gap-x-12 md:gap-x-24 lg:gap-x-52">
       {/* First Section */}
 
       <div className="row-start-1 row-span-1 col-start-1 col-span-1">
@@ -90,7 +93,7 @@ const SetApart = () => {
 
       {/* Fourth Section */}
 
-      <div className="row-start-6 row-span-1 col-start-2 col-span-1">
+      <div className="row-start-6 row-span-1 col-start-2 col-span-1 relative z-10">
         <h1 className="font-cabinet text-3xl mb-3 font-medium sm:text-4xl lg:text-5xl 2xl:text-6xl">
           {whyUs[3].id}
         </h1>
@@ -113,6 +116,12 @@ const SetApart = () => {
           <p className="whitespace-nowrap font-light text-base tracking-widest font-satoshi sm:text-lg lg:text-xl 2xl:text-2xl">
             {whyUs[3].image.title}
           </p>
+        </div>
+      </div>
+
+      <div className="row-start-7 row-span-1 col-start-2 col-span-1">
+        <div className="flex justify-start items-center sm:-mt-12 md:-mt-13 lg:-mt-6 xl:-mt-12 2xl:-mt-20 max-sm:justify-center">
+          {contactBtn && <Button button={contactBtn} />}
         </div>
       </div>
     </section>
