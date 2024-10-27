@@ -28,9 +28,11 @@ const WhyUs = () => {
             >
               {button.title}
               <motion.div
-                intial={{ width: "100%" }}
-                animate={{ width: isHovered ? 0 : "100%" }}
-                transition={{ duration: 0.5 }}
+                intial={{ x: 0 }}
+                animate={{
+                  x: isHovered ? "100%" : 0,
+                }}
+                transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}
                 className="absolute w-full h-[2px] rounded-full bg-black bottom-0 left-0"
               />
             </motion.button>
