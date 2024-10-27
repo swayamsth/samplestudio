@@ -117,3 +117,13 @@ export const whyUs = [
     },
   },
 ];
+
+export const contact = [
+  {
+    title: "Bring Your Vision to Life with samplestudio.",
+    button: {
+      title: "schedule a consultation",
+      icon: "./icons/chevron-right.svg",
+    },
+  },
+];

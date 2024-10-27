@@ -4,6 +4,7 @@ import FeaturedProjects from "./sections/FeaturedProjects";
 import Hero from "./sections/Hero";
 import { useEffect } from "react";
 import WhyUs from "./sections/WhyUs";
+import Contact from "./sections/Contact";
 
 export default function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function App() {
       <About />
       <FeaturedProjects />
       <WhyUs />
+      <Contact />
     </div>
   );
 }
