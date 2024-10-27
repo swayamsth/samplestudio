@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { whyUsHeading } from "../constants";
 import SetApart from "../components/SetApart";
+import { motion } from "framer-motion";
 
 const WhyUs = () => {
+  const [isHovered, setHovered] = useState(false);
   return (
     <section>
       {whyUsHeading.map(({ title, description, button }, index) => (
@@ -19,9 +21,19 @@ const WhyUs = () => {
               {description}
             </p>
 
-            <button className="font-satoshi text-base font-light sm:text-lg lg:text-xl  2xl:text-2xl underline underline-offset-4">
+            <motion.button
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+              className="font-satoshi text-base font-light sm:text-lg lg:text-xl  2xl:text-2xl relative overflow-hidden"
+            >
               {button.title}
-            </button>
+              <motion.div
+                intial={{ width: "100%" }}
+                animate={{ width: isHovered ? 0 : "100%" }}
+                transition={{ duration: 0.5 }}
+                className="absolute w-full h-[2px] rounded-full bg-black bottom-0 left-0"
+              />
+            </motion.button>
           </div>
         </div>
       ))}
