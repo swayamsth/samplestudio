@@ -10,8 +10,11 @@ const Hero = () => {
     <section className="bg-[url('/images/heroImage.webp')] h-screen w-full bg-cover bg-bottom relative">
       <NavBar />
 
-      {hero.map(({ title, description, button }) => (
-        <div className="grid place-content-center text-center gap-y-3 p-8 w-full h-5/6 top-0 absolute sm:gap-y-4 2xl:gap-y-6">
+      {hero.map(({ title, description, button }, index) => (
+        <div
+          key={index}
+          className="grid place-content-center text-center gap-y-3 p-8 w-full h-5/6 top-0 absolute sm:gap-y-4 2xl:gap-y-6"
+        >
           <h1 className="font-satoshi text-4xl leading-tight font-normal sm:text-5xl lg:text-6xl  2xl:text-7xl">
             {title}
           </h1>

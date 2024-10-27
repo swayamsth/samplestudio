@@ -36,10 +36,8 @@ const Footer = () => {
           </h2>
           <div className="space-y-6 max-sm:space-y-3">
             {quickLinks.links.map((link, index) => (
-              <div className="flex">
-                <FlipLinks href={link.href} key={index}>
-                  {link.title}
-                </FlipLinks>
+              <div key={index} className="flex">
+                <FlipLinks href={link.href}>{link.title}</FlipLinks>
               </div>
             ))}
           </div>
@@ -52,10 +50,8 @@ const Footer = () => {
           </h2>
           <div className="space-y-6 max-sm:space-y-3">
             {socials.links.map((link, index) => (
-              <div className="flex">
-                <FlipLinks href={link.href} key={index}>
-                  {link.title}
-                </FlipLinks>
+              <div key={index} className="flex">
+                <FlipLinks href={link.href}>{link.title}</FlipLinks>
               </div>
             ))}
           </div>

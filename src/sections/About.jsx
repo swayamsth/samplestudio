@@ -5,8 +5,11 @@ import Button from "../components/Button";
 const About = () => {
   return (
     <section className="mt-8">
-      {aboutUs.map(({ title, description, button, image }) => (
-        <div className="p-6 sm:p-7 lg:p-8 flex justify-between items-center gap-32 max-lg:gap-16 max-sm:block">
+      {aboutUs.map(({ title, description, button, image }, index) => (
+        <div
+          key={index}
+          className="p-6 sm:p-7 lg:p-8 flex justify-between items-center gap-32 max-lg:gap-16 max-sm:block"
+        >
           <div className="mt-16 sm:mt-24">
             <h1 className="font-cabinet text-3xl font-medium mb-3 sm:text-4xl sm:mb-5 lg:text-5xl 2xl:text-6xl">
               {title}
