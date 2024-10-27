@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import { hero } from "../constants";
 import Button from "../components/Button";
+import FlipLinks from "../components/FlipLinks";
+import Magnetic from "../components/Magnetic";
 
 const Hero = () => {
   return (
@@ -23,13 +25,17 @@ const Hero = () => {
       ))}
 
       <div className="absolute bottom-0 right-0">
-        <button className="rounded-full bg-white border-none flex items-center justify-center m-6 sm:m-7 lg:m-8">
-          <img
-            src="./icons/arrow-down.svg"
-            alt=""
-            className="p-3 size-[125%]"
-          />
-        </button>
+        <Magnetic>
+          <button className="rounded-full bg-white border-none flex items-center justify-center m-6 sm:m-7 lg:m-8">
+            <FlipLinks>
+              <img
+                src="./icons/arrow-down.svg"
+                alt=""
+                className="p-3 size-[125%]"
+              />
+            </FlipLinks>
+          </button>
+        </Magnetic>
       </div>
     </section>
   );
