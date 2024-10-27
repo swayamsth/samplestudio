@@ -1,6 +1,7 @@
 import React from "react";
 import { footer } from "../constants";
-import { section } from "framer-motion/client";
+import { div, section } from "framer-motion/client";
+import FlipLinks from "../components/FlipLinks";
 
 const Footer = () => {
   const companyInfo = footer[0];
@@ -17,6 +18,18 @@ const Footer = () => {
       </div>
 
       {/* Quick Links */}
+      <div className="inline-flex flex-col gap-2 items-start">
+        <h2>{quickLinks.title}</h2>
+        <div className="space-y-2">
+          {quickLinks.links.map((link, index) => (
+            <div className="flex">
+              <FlipLinks href={link.href} key={index}>
+                {link.title}
+              </FlipLinks>
+            </div>
+          ))}
+        </div>
+      </div>
     </footer>
   );
 };
