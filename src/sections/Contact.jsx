@@ -3,6 +3,7 @@ import { contact } from "../constants";
 import Button from "../components/Button";
 
 const Contact = () => {
+  const contactStatus = true;
   return (
     <section className="bg-[url('/images/contact.webp')] h-screen w-full bg-cover bg-top relative">
       {contact.map(({ title, button }, index) => (
@@ -14,7 +15,7 @@ const Contact = () => {
             {title}
           </h1>
           <div className="mx-auto mt-6">
-            <Button button={button} />
+            <Button button={button} contact={contactStatus} />
           </div>
         </div>
       ))}
