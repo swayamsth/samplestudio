@@ -1,4 +1,4 @@
-import { button, image } from "framer-motion/client";
+import { button, image, title } from "framer-motion/client";
 
 export const hero = [
   {
@@ -125,5 +125,60 @@ export const contact = [
       title: "schedule a consultation",
       icon: "./icons/chevron-right-contact.svg",
     },
+  },
+];
+
+export const footer = [
+  {
+    companyName: "samplestudio.",
+    location: "sydney, nsw",
+    tel: "+61 123 456 789",
+    email: "contact@samplestudio.com",
+  },
+  {
+    title: "quick links",
+    links: [
+      {
+        title: "about us",
+        href: "#about",
+      },
+      {
+        title: "projects",
+        href: "#projects",
+      },
+      {
+        title: "services",
+        href: "#why-us",
+      },
+      {
+        title: "contact",
+        href: "#contact",
+      },
+      {
+        title: "privacy policy",
+        href: "#",
+      },
+      {
+        title: "terms of use",
+        href: "#",
+      },
+    ],
+  },
+  {
+    title: "follow us",
+    links: [
+      {
+        title: "instagram",
+        href: "#",
+      },
+      {
+        title: "linkedin",
+        href: "#",
+      },
+      {
+        title: "twitter",
+        href: "#",
+      },
+    ],
   },
 ];

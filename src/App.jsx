@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import { useEffect } from "react";
 import WhyUs from "./sections/WhyUs";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 export default function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function App() {
       <FeaturedProjects />
       <WhyUs />
       <Contact />
+      <Footer />
     </div>
   );
 }
