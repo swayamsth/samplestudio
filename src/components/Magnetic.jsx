@@ -27,7 +27,7 @@ const Magnetic = ({ children }) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       animate={{ x, y }}
-      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+      transition={{ type: "spring", stiffness: 170, damping: 20, mass: 0.5 }}
     >
       {children}
     </motion.div>
