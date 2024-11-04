@@ -26,9 +26,15 @@ const FeaturedProjects = () => {
 
       <Grid projectItems={projectItems} />
 
-      <div className="my-8 flex items-center justify-center">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        className="my-8 flex items-center justify-center"
+      >
         {exploreButton && <Button button={exploreButton} />}
-      </div>
+      </motion.div>
     </section>
   );
 };
