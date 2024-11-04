@@ -10,7 +10,7 @@ export const fadeIn = (direction, delay) => ({
     x: 0,
     transition: {
       delay: delay,
-      duration: 1.2,
+      duration: 0.8,
       type: "tween",
       ease: [0.65, 0, 0.35, 1],
     },
