@@ -14,10 +14,10 @@ const Hero = () => {
 
       {hero.map(({ title, description, button }, index) => (
         <motion.div
-          variants={fadeIn("up", 2.2)}
+          variants={fadeIn("up", 2.4)}
           initial="hidden"
           animate={"visible"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: true }}
           key={index}
           className="grid place-content-center text-center gap-y-3 p-8 w-full h-5/6 top-0 absolute sm:gap-y-4 2xl:gap-y-6"
         >
@@ -34,10 +34,10 @@ const Hero = () => {
       ))}
 
       <motion.div
-        variants={fadeIn("left", 2.2)}
+        variants={fadeIn("left", 2.4)}
         initial="hidden"
         animate={"visible"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true }}
         className="absolute bottom-0 right-0"
       >
         <Magnetic>

@@ -9,10 +9,10 @@ const NavBar = () => {
     <nav className="flex justify-between p-8 items-center relative z-10">
       <Magnetic>
         <motion.div
-          variants={fadeIn("down", 2.2)}
+          variants={fadeIn("down", 2.4)}
           initial="hidden"
           animate={"visible"}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: true }}
           className="font-cabinet font-light text-3xl max-sm:text-xl max-lg:text-2xl max-2xl:text-3xl 2xl:text-4xl cursor-pointer"
         >
           samplestudio.
@@ -22,10 +22,10 @@ const NavBar = () => {
         <img src="./icons/menu.svg" alt="" />
       </div>
       <motion.div
-        variants={fadeIn("down", 2.2)}
+        variants={fadeIn("down", 2.4)}
         initial="hidden"
         animate={"visible"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true }}
         className="flex gap-8 max-sm:hidden"
       >
         <FlipLinks href="#">about us</FlipLinks>
