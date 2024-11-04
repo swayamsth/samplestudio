@@ -16,7 +16,7 @@ const About = () => {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"visible"}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="mt-16 sm:mt-24"
           >
             <h1 className="font-cabinet text-3xl font-medium mb-3 sm:text-4xl sm:mb-5 lg:text-5xl 2xl:text-6xl">
@@ -34,7 +34,7 @@ const About = () => {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"visible"}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="overflow-hidden"
           >
             <img
