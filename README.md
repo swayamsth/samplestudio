@@ -1,5 +1,7 @@
 # samplestudio
 
+![logo](/public/icons/favicon.png)
+
 **samplestudio** is a conceptual architecture firm. This personal project showcases architectural design and web development skills.
 
 ## Conceptual Services
