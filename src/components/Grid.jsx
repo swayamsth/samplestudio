@@ -13,7 +13,7 @@ const Grid = ({ projectItems }) => {
           transition="transition"
           className="row-start-1 row-span-4 col-start-1 col-span-8"
         >
-          <a href="">
+          <a href="#">
             <img
               src={projectItems[0].image}
               alt={projectItems[0].title}
@@ -28,7 +28,7 @@ const Grid = ({ projectItems }) => {
           transition="transition"
           className="row-start-1 row-span-5 col-start-9 col-span-5"
         >
-          <a href="">
+          <a href="#">
             <img
               src={projectItems[1].image}
               alt={projectItems[1].title}
@@ -43,7 +43,7 @@ const Grid = ({ projectItems }) => {
           transition="transition"
           className="row-start-5 row-span-4 col-start-1 col-span-4"
         >
-          <a href="">
+          <a href="#">
             <img
               src={projectItems[2].image}
               alt={projectItems[2].title}
@@ -58,7 +58,7 @@ const Grid = ({ projectItems }) => {
           transition="transition"
           className="row-start-5 row-span-4 col-start-5 col-span-4"
         >
-          <a href="">
+          <a href="#">
             <img
               src={projectItems[3].image}
               alt={projectItems[3].title}
@@ -73,7 +73,7 @@ const Grid = ({ projectItems }) => {
           transition="transition"
           className="row-start-6 row-span-3 col-start-9 col-span-5"
         >
-          <a href="">
+          <a href="#">
             <img
               src={projectItems[4].image}
               alt={projectItems[4].title}
