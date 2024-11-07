@@ -14,7 +14,7 @@ const WhyUs = () => {
           className="p-8 flex justify-between max-sm:flex-col max-sm:gap-3"
         >
           <motion.h1
-            variants={fadeIn("up", 0.2)}
+            variants={fadeIn("up", 0.0)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true }}
@@ -31,7 +31,7 @@ const WhyUs = () => {
                 duration: 0.5,
                 ease: [0.65, 0, 0.35, 1],
               }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.25 }}
               className="font-satoshi font-light text-base sm:text-lg lg:text-xl 2xl:text-2xl"
             >
               {description}
