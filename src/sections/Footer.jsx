@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { footer } from "../constants";
 import { div, section } from "framer-motion/client";
 import FlipLinks from "../components/FlipLinks";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const [isHovered, setHovered] = useState(false);
+
   const companyInfo = footer[0];
   const quickLinks = footer[1];
   const socials = footer[2];
@@ -23,9 +26,19 @@ const Footer = () => {
           </p>
           <a
             href={`mailto:${companyInfo.email}`}
-            className="font-satoshi font-light text-2xl max-lg:text-xl max-2xl:text-2xl 2xl:text-3xl"
+            className="font-satoshi font-light text-2xl max-lg:text-xl max-2xl:text-2xl 2xl:text-3xl relative overflow-hidden"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
           >
             {companyInfo.email}
+            <motion.div
+              intial={{ x: "105%" }}
+              animate={{
+                x: isHovered ? 0 : "105%",
+              }}
+              transition={{ duration: 0.75, ease: [0.65, 0, 0.35, 1] }}
+              className="absolute w-full h-[2px] rounded-full bg-black bottom-0 left-0"
+            />
           </a>
         </div>
 
