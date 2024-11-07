@@ -14,7 +14,7 @@ const WhyUs = () => {
           className="p-8 flex justify-between max-sm:flex-col max-sm:gap-3"
         >
           <motion.h1
-            variants={fadeIn("up", 0.0)}
+            variants={fadeIn("up", 0.02)}
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true }}
