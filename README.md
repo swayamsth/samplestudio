@@ -1,6 +1,6 @@
 # samplestudio
 
-![logo](/public/icons/favicon.png)
+<img src="/public/icons/favicon.png" alt="logo" width="50" height="50">
 
 **samplestudio** is a conceptual architecture firm. This personal project showcases architectural design and web development skills.
 
