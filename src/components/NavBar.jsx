@@ -18,9 +18,15 @@ const NavBar = () => {
           samplestudio.
         </motion.div>
       </Magnetic>
-      <div className="hidden max-sm:block">
+      <motion.div
+        variants={fadeIn("down", 2.4)}
+        initial="hidden"
+        animate={"visible"}
+        viewport={{ once: true }}
+        className="hidden max-sm:block"
+      >
         <img src="./icons/menu.svg" alt="" />
-      </div>
+      </motion.div>
       <motion.div
         variants={fadeIn("down", 2.4)}
         initial="hidden"
