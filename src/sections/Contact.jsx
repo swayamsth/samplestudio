@@ -1,13 +1,19 @@
 import React from "react";
 import { contact } from "../constants";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "../constants/anim";
 
 const Contact = () => {
   const contactStatus = true;
   return (
     <section className="bg-[url('/images/contact.webp')] h-screen w-full bg-cover bg-top relative">
       {contact.map(({ title, button }, index) => (
-        <div
+        <motion.div
+          variants={fadeIn("up", 0.1)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true }}
           key={index}
           className="grid place-content-center text-center gap-y-3 p-8 w-full h-full top-1/4 absolute sm:gap-y-4 2xl:gap-y-6 2xl:top-1/3"
         >
@@ -17,7 +23,7 @@ const Contact = () => {
           <div className="mx-auto mt-6">
             <Button button={button} contact={contactStatus} />
           </div>
-        </div>
+        </motion.div>
       ))}
     </section>
   );
