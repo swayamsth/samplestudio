@@ -19,6 +19,7 @@ const navLinks = [
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <nav className="flex justify-between p-8 items-center relative z-10">
       <Magnetic>
@@ -70,12 +71,8 @@ const NavBar = () => {
                 className="flex flex-col h-full justify-center font-cabinet items-center gap-4"
               >
                 {navLinks.map((link, index) => (
-                  <div className="overflow-hidden">
-                    <MobileNavLink
-                      title={link.title}
-                      href={link.href}
-                      key={index}
-                    />
+                  <div className="overflow-hidden" key={index}>
+                    <MobileNavLink title={link.title} href={link.href} />
                   </div>
                 ))}
               </motion.div>
@@ -93,10 +90,11 @@ const NavBar = () => {
         viewport={{ once: true }}
         className="flex gap-8 max-sm:hidden"
       >
-        <FlipLinks href="#">about us</FlipLinks>
-        <FlipLinks href="#">projects</FlipLinks>
-        <FlipLinks href="#">service</FlipLinks>
-        <FlipLinks href="#">contact</FlipLinks>
+        {navLinks.map((link, index) => (
+          <FlipLinks key={index} href={link.href}>
+            {link.title}
+          </FlipLinks>
+        ))}
       </motion.div>
     </nav>
   );
