@@ -16,3 +16,16 @@ export const fadeIn = (direction, delay) => ({
     },
   },
 });
+
+export const scale = {
+  initial: {
+    scale: 1,
+  },
+  enter: {
+    scale: 0.98,
+  },
+  transition: {
+    duration: 0.5,
+    ease: [0.65, 0, 0.35, 1],
+  },
+};
