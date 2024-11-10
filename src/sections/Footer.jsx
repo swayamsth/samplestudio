@@ -26,17 +26,17 @@ const Footer = () => {
           </p>
           <a
             href={`mailto:${companyInfo.email}`}
-            className="font-satoshi font-light text-2xl max-lg:text-xl max-2xl:text-2xl 2xl:text-3xl relative overflow-hidden"
+            className="font-satoshi font-light text-2xl max-lg:text-xl max-2xl:text-2xl 2xl:text-3xl relative max-w-fit overflow-hidden"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
             {companyInfo.email}
             <motion.div
-              intial={{ x: "105%" }}
+              intial={{ x: "101%" }}
               animate={{
-                x: isHovered ? 0 : "105%",
+                x: isHovered ? 0 : "101%",
               }}
-              transition={{ duration: 0.75, ease: [0.65, 0, 0.35, 1] }}
+              transition={{ duration: 0.55, ease: [0.65, 0, 0.35, 1] }}
               className="absolute w-full h-[2px] rounded-full bg-black bottom-0 left-0"
             />
           </a>
