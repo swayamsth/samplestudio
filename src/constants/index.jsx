@@ -20,7 +20,7 @@ export const aboutUs = [
       title: "learn more",
       icon: "./icons/chevron-right.svg",
     },
-    image: "/images/aboutUs.webp",
+    image: "./images/aboutUs.webp",
   },
 ];
 
@@ -28,27 +28,27 @@ export const projects = [
   {
     id: 1,
     title: "project 1",
-    image: "/images/project1.webp",
+    image: "./images/project1.webp",
   },
   {
     id: 2,
     title: "project 2",
-    image: "/images/project2.webp",
+    image: "./images/project2.webp",
   },
   {
     id: 3,
     title: "project 3",
-    image: "/images/project3.webp",
+    image: "./images/project3.webp",
   },
   {
     id: 4,
     title: "project 4",
-    image: "/images/project4.webp",
+    image: "./images/project4.webp",
   },
   {
     id: 5,
     title: "project 5",
-    image: "/images/project5.webp",
+    image: "./images/project5.webp",
   },
   {
     button: {
@@ -76,7 +76,7 @@ export const whyUs = [
     description:
       "At samplestudio, every project begins with your unique vision. We design personalized, cutting-edge spaces that reflect your needs, whether it's a modern home or a sustainable urban development, pushing the boundaries of creativity and innovation.",
     image: {
-      src: "/images/feature1.webp",
+      src: "./images/feature1.webp",
       title: "(01) beach house in miami",
     },
   },
@@ -86,7 +86,7 @@ export const whyUs = [
     description:
       "We view our clients as partners, collaborating from concept to completion to ensure every detail aligns with your vision. We listen, adapt, and value your input, creating spaces that are personal and purpose-driven.",
     image: {
-      src: "/images/feature2.webp",
+      src: "./images/feature2.webp",
       title: "(02) city of paris in the 80s",
     },
   },
@@ -96,7 +96,7 @@ export const whyUs = [
     description:
       "At samplestudio, sustainability is at our core. We use eco-friendly designs, innovative materials, and energy-efficient solutions to minimize environmental impact while maintaining aesthetics and functionality, building with the future in mind.",
     image: {
-      src: "/images/feature3.webp",
+      src: "./images/feature3.webp",
       title: "(03) skyline in brazil",
     },
   },
@@ -106,7 +106,7 @@ export const whyUs = [
     description:
       "With years of experience and successful projects across all sectors, our portfolio speaks for itself. We deliver high-quality designs on time and within budget, ensuring your project’s success from start to finish.",
     image: {
-      src: "/images/feature4.webp",
+      src: "./images/feature4.webp",
       title: "(04) arch tunnel in europe",
     },
   },
