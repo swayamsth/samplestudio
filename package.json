@@ -1,5 +1,6 @@
 {
   "name": "samplestudio",
+  "homepage": "https://swayamsth.github.io/samplestudio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.9",
+    "gh-pages": "^6.2.0",
     "lenis": "^1.1.14",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
