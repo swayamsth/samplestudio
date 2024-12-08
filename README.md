@@ -32,7 +32,7 @@ This project includes:
 ## Contact
 
 - **Email**: [contact@samplestudio.com](mailto:contact@samplestudio.com)
-- **Website**: [samplestudio.com](https://www.samplestudio.com)
+- **Website**: [samplestudio.com](https://swayamsth.github.io/samplestudio/)
 
 ## License
 
